@@ -1,0 +1,19 @@
+# Ignore environment files
+.env
+
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore Docker volumes
+db_data/
+
+# Ignore any IDE-specific files (e.g., for VS Code)
+.vscode/
+
+# Ignore log files or any generated files
+*.log
+
+# Ignore any testing or temporary files
+*.tmp

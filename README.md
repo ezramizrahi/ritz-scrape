@@ -1,4 +1,4 @@
-Scraper for my local movie theatre. Gets movies, showtimes, and genres (from TMDB).
+Scraper for my local movie theatre. Scrapes movies, showtimes, and then grabs genres (from TMDB).
 
 ## Requirements
 You will need a `.env` file with:
@@ -12,3 +12,6 @@ You will need a `.env` file with:
 ## Check logs that everything is running properly:
 1. `docker-compose logs scraper`
 2. `docker-compose logs db`
+
+## Tests
+Tests are located in the `tests` directory and run as part of the build process.

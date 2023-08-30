@@ -13,5 +13,8 @@ COPY ./build/requirements.txt /app/
 RUN pip3 install --no-cache-dir -r /app/requirements.txt
 
 COPY ./services/ /app/services/
+COPY ./tests/ /app/tests/
+
+RUN PYTHONPATH=/app pytest /app/tests/
 
 CMD ["python3", "/app/services/scraper/scrape.py"]

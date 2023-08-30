@@ -1,4 +1,3 @@
-import json
 from bs4 import BeautifulSoup
 import requests
 from db_logic.db_actions import insert_movie, insert_showtime, insert_genre, associate_movie_genre

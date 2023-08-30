@@ -31,6 +31,28 @@ services:
     networks:
       - my_network
 
+  scraper_metrics:
+    build:
+      context: .
+      dockerfile: ./build/Dockerfile
+    command: ["python3", "/app/observability/expose_metrics.py"]
+    depends_on:
+      scraper:
+        condition: service_started
+    networks:
+      - my_network
+
+  prometheus:
+    image: prom/prometheus:latest
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml  # Mount prometheus config
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+    ports:
+      - "9090:9090"
+    networks:
+      - my_network
+
 networks:
   my_network:
     driver: bridge

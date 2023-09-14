@@ -17,3 +17,5 @@ db_data/
 
 # Ignore any testing or temporary files
 *.tmp
+
+.DS_Store

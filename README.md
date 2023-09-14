@@ -25,7 +25,7 @@ You will need a `.env` file with:
 2. `docker-compose logs db`
 
 ## Observability
-I expose some metrics in `observability/expose_metrics.py`. Once you've got it up and running, you can navigate to `http://<raspberry-pi-ip>:9090` and use the Prometheus dashboard.
+Playing around with observability. I expose some metrics in `observability/expose_metrics.py`. Once you've got it up and running, you can navigate to `http://<raspberry-pi-ip>:9090` and use the Prometheus dashboard.
 
 ## Tests
 Tests are located in the `tests` directory and run as part of the build process.

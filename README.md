@@ -1,7 +1,7 @@
-Scraper for my local movie theatre. Scrapes movies, showtimes, and then grabs genres (from TMDB).
+Scraper for my local movie theatre. Scrapes movies, showtimes, and then grabs genres (from TMDB). A lot of this is overkill - it doesn't really need to be run in Docker. We definitely don't need Prometheus. Both of these are included for learning purposes.
 
 ## How it works
-Scrapes movie titles and showtimes from the "now showing" section of my local movie theatre. 
+Scrapes movie titles and showtimes from the "now showing" section of my local movie theatre.
 
 I then search for the movie using using TMDB's api (https://api.themoviedb.org/3/search/movie) - this returns an array of objects with titles similar to our query title. 
 

@@ -29,3 +29,6 @@ Playing around with observability. I expose some metrics in `observability/expos
 
 ## Tests
 Tests are located in the `tests` directory and run as part of the build process.
+
+## To Do
+Remove Docker and Prometheus - too much bloat and not really necessary.
